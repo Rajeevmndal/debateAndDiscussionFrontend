@@ -1,0 +1,20 @@
+{
+  "user": {
+    "name": "Rajiv",
+    "bio": "Rajiv is passionate about tech, policy, and discourse. He brings thoughtful reasoning and curiosity into every debate."
+  },
+  "stats": [
+    { "label": "Debates Created", "value": 3 },
+    { "label": "Comments Posted", "value": 43 }
+   
+  ],
+  "activities": [
+    "Commented on \"Universal Basic Income\"",
+    "Posted in \"Artificial Intelligence Debate\"",
+    "Upvoted in \"Tech Regulation Debate\""
+  ],
+  "debates": [
+    { "title": "AI in Education", "category": "Technology", "side": "For", "votes": 52, "status": "Open" },
+    { "title": "Digital Privacy", "category": "Policy", "side": "Against", "votes": 31, "status": "Closed" }
+  ]
+}
