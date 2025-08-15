@@ -43,7 +43,7 @@ useEffect(() => {
   const handleDropdownChange = (e) => {
     const debateId = e.target.value;
     if (debateId) {
-      navigate(`/debate-room/${debateId}`);
+      navigate(`/room/${debateId}`);
     }
   };
 
