@@ -183,7 +183,7 @@ useEffect(() => {
       >
         <option value="">Select a debate</option>
         {participatedDebates.map((debate) => (
-          <option key={debate.id} value={debate.id}>
+          <option key={debate.debateId} value={debate.debateId}>
             {debate.topic}
           </option>
         ))}
