@@ -251,12 +251,30 @@ const PublicDebateList = () => {
             <p className="card-text text-muted">{debate.description}</p>
             <span className="badge bg-info mb-2">{debate.category}</span>
             <button
-              className="btn btn-outline-primary mt-auto"
-              style={{ borderRadius: '50px', fontWeight: 500 }}
-              onClick={() => navigate(`/public-debate/${debate.debateId}/discussion`)}
-            >
-              Join Discussion
-            </button>
+  className="btn mt-auto"
+  style={{
+    borderRadius: '50px',
+    fontWeight: 500,
+    color: '#4a90e2',
+    border: '2px solid #4a90e2',
+    backgroundColor: 'transparent',
+    transition: 'background-color 0.3s ease, color 0.3s ease, transform 0.2s ease',
+  }}
+  onMouseEnter={(e) => {
+    e.target.style.backgroundColor = '#357ABD'; // Your custom hover color
+    e.target.style.color = '#fff';
+    e.target.style.transform = 'scale(1.03)';
+  }}
+  onMouseLeave={(e) => {
+    e.target.style.backgroundColor = 'transparent';
+    e.target.style.color = '#4a90e2';
+    e.target.style.transform = 'scale(1)';
+  }}
+  onClick={() => navigate(`/public-debate/${debate.debateId}/discussion`)}
+>
+  Join Discussion
+</button>
+
           </div>
         </div>
       </div>
