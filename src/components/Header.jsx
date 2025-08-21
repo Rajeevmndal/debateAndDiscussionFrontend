@@ -45,7 +45,7 @@ const Header = () => {
       />
 
       <h5 style={{ color: '#20c997', fontWeight: 600, fontSize: '1.1rem', marginBottom: '0.5rem' }}>
-        Hey creators 👋
+        Hey creators 
       </h5>
 
       <h1 style={{
@@ -94,7 +94,7 @@ const Header = () => {
         }}
         title="Start your journey"
       >
-        🚀 Get Started
+        Get Started
       </button>
 
       <style>
