@@ -370,34 +370,6 @@ apiClient.post(`/api/debate/${debateId}/analyze`)
           >
             Against
           </button>
-
-              {/* 🔥 Add Delete Button Here */}
-    {isOwner && (
-      <button
-        className="btn mt-4 px-4 py-2"
-        style={{
-          backgroundColor: "#4a90e2",
-          color: "#fff",
-          borderRadius: "30px",
-          fontWeight: "500",
-        }}
-        onClick={() => {
-          if (window.confirm("Are you sure you want to delete this debate?")) {
-            apiClient
-              .delete(`/debates/${debateId}`)
-              .then(() => {
-                toast.success("Debate deleted successfully");
-                navigate("/dashboard");
-              })
-              .catch((err) => {
-                toast.error(err?.response?.data || "Failed to delete debate");
-              });
-          }
-        }}
-      >
-        Delete Debate
-      </button>
-    )}
         </div>
       )}
 
